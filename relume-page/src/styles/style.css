@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 72px;
+    padding: 18px 64px;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    transition: 0.7s;
+    gap: 20px;
+    overflow-y: hidden;
+}
+
+header > section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header:hover {
+    height: 274px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    gap: 32px;
+    align-items: center;
+}
+
+.navigation nav {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.navigation a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #000;
+
+    img {
+        padding: 5px 8px;
+    }
+}
+
+.navigation > img {
+    height: 36px;
+}
+
+.btn-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.btn-wrapper button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 40px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+.mega-menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 202px;
+    padding: 32px;
+}
+
+.mega-menu > div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.mega-menu img {
+    height: 20px;
+}
+
+.mega-box {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+    height: 82px;
+    padding: 8px 0px;
+}
+
+.mega-box span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.mega-box p {
+    font-size: 14px;
+}
+
+#cta {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+#cta a {
+    color: #000;
+    text-decoration: underline;
+}
