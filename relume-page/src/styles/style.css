@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: auto;
+    overflow-x: hidden;
 }
 
 header {
@@ -16,6 +16,8 @@ header {
     transition: 0.7s;
     gap: 20px;
     overflow-y: hidden;
+    position: absolute;
+    background-color: #fff;
 }
 
 header > section {
@@ -75,6 +77,7 @@ header:hover {
     border: 1px solid #000;
     background-color: #000;
     color: #fff;
+    cursor: pointer;
     font-size: 16px;
 }
 
@@ -122,4 +125,45 @@ header:hover {
 #cta a {
     color: #000;
     text-decoration: underline;
+}
+
+.hero-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 900px;
+    align-items: center;
+    margin-top: 72px;
+}
+
+.hero-header > div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 80px;
+    gap: 32px;
+}
+
+.hero-header > img {
+    width: 50%;
+}
+
+.hero-header h1 {
+    width: 560px;
+    font-size: 56px;
+    font-weight: 800;
+}
+
+.hero-header p {
+    width: 560px;
+    font-size: 18px;
+}
+
+.hero-header button {
+    width: 96px;
+    height: 48px;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
 }
